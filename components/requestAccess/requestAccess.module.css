@@ -1,0 +1,89 @@
+.pageTitle {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  border-radius: 6px;
+}
+.pageSubTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+.textFieldInput {
+  padding-top: 20px;
+  padding-bottom: 6px;
+}
+.loginWrapperGrid {
+  min-height: 54px;
+}
+.loginWrapperGridLeft {
+  background-color: #FFF;
+}
+.requestBut {
+  background-color: #3454D1;
+  text-transform: none;
+  width: 100%;
+  padding: 9px 22px;
+}
+.requestBut:active, .requestBut:hover {
+  background-color: rgb(68, 138, 255);
+}
+.errorText {
+  color: #ef9a9a;
+  margin: 0 0 10px;
+}
+.alreadyMember {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+.accessRequestedBox {
+  background: #CCE4CB;
+  border: 1px solid #529A5F;
+  border-radius: 4px;
+  padding: 18px 76px;
+  width: auto;
+  height: 61px;
+  display: inline-block;
+}
+.accessRequested {
+  height: 25px;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #2B5C28;
+}
+.thankYou {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+@media only screen and (max-width: 600px) {
+  .requestBut {
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}

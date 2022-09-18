@@ -1,0 +1,211 @@
+.page_title_deal {
+  margin-top: 5px;
+}
+.page_subtitle_deal {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.15px;
+  color: #333e48;
+  margin-top: 7px;
+}
+.but_interested_no {
+  display: inline-block;
+  width: 175px;
+  height: 46px;
+  border: 2px solid #dd3944;
+  border-radius: 55px;
+  color: #dd3944;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.section_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: #333e48;
+  display: inline-block;
+  margin-top: 48px;
+  width: 100%;
+}
+.overview_description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333e48;
+  mix-blend-mode: normal;
+  margin-top: 16px;
+  max-width: 491px;
+}
+.overview_readmore {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3455d1;
+  border: 0;
+  background: none;
+  margin-top: 8px;
+  padding: 0;
+  cursor: pointer;
+}
+.main_characteristics {
+  margin-top: 16px;
+}
+.main_characteristic_row {
+  border-bottom: 2px solid #edf5fe;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333e48;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+  div {
+    padding-bottom: 8px;
+    &:last-child {
+      font-weight: 700;
+    }
+  }
+}
+.general_information {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333e48;
+  ul {
+    margin-left: 30px;
+    li {
+      padding-bottom: 10px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.yourContacts {
+  margin-top: 48px;
+}
+
+.tooltipStyles div {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.data_room_link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3455d1;
+  mix-blend-mode: normal;
+  margin-top: 16px;
+  display: inline-block;
+  background: url(../public/images/data_room_link_icon.png) no-repeat center
+    right;
+  padding-right: 20px;
+  word-break: break-all;
+}
+.file_contents {
+  margin-top: 16px;
+}
+.pdf_file {
+  background: url(../public/images/pdf_icon.png) no-repeat 0 6px;
+  padding-left: 35px;
+  padding-right: 20px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3455d1;
+  mix-blend-mode: normal;
+  margin-bottom: 16px;
+  cursor: pointer;
+  word-break: break-all;
+  border-bottom: 2px solid #EDF5FE;
+  height: 100%;
+  margin-right: 20px;
+}
+.pdf_file_category {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #96a4b4;
+  mix-blend-mode: normal;
+  margin-top: 4px;
+}
+.but_download_all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 255px;
+  height: 48px;
+  padding: 8px 24px 8px 16px;
+  background: #3455d1;
+  border-radius: 93px;
+  border: none;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  em {
+    background: url(../public/images/download_icon.png) no-repeat center left;
+    display: inline-block;
+    width: 20px;
+    height: 23px;
+    margin-right: 12px;
+  }
+  font-weight: 500;
+}
+
+.title_are_you_interested_deal {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: #333E48;
+}
+.google_map_view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 19px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.google_map_view_subtitle {
+  height: 19px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3455D1;
+  mix-blend-mode: normal;
+}

@@ -1,0 +1,135 @@
+@mixin muiLabelFocused {
+  -webkittransform: translate(14px, -9px) scale(1);
+  -moztransform: translate(14px, -9px) scale(1);
+  -mstransform: translate(14px, -9px) scale(1);
+  transform: translate(14px, -9px) scale(1);
+  color: #3455d1;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+#preferences {
+  * {
+    font-family: Roboto;
+  }
+  .inputMaxWidthWrapper {
+    width: calc(100% - 184px);
+  }
+  .titleHeaderOrg {
+    border-bottom: 1px solid #3455d1;
+    padding-bottom: 7px;
+  }
+
+  .basicInfoOrg {
+    margin-top: 48px;
+    padding-bottom: 99px;
+    h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.15px;
+      color: #333e48;
+    }
+    .basicInfoOrgRow {
+      margin-top: 16px;
+      display: flex;
+      .basicInfoAvatarOrgWrapper {
+        margin-right: 32px;
+      }
+      .basicInfoAvatarOrg {
+        width: 150px;
+        height: 150px;
+        border: 2px dashed #3455d1;
+        border-radius: 50%;
+        background: #edf5fe url(../../public/images/add_photo_icon.png)
+          no-repeat center center;
+        cursor: pointer;
+      }
+    }
+    .MuiFormControl-root {
+      fieldset {
+        border: 2px solid #3455d1;
+      }
+      input {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: #333e48;
+      }
+      label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.5px;
+        color: #96a4b4;
+        -webkit-transform: translate(14px, 15px) scale(1);
+        -moz-transform: translate(14px, 15px) scale(1);
+        -ms-transform: translate(14px, 15px) scale(1);
+        transform: translate(14px, 15px) scale(1);
+        span {
+          text-indent: -3px;
+          display: inline-block;
+        }
+        &.Mui-focused {
+          @include muiLabelFocused;
+        }
+      }
+    }
+    .textInputWrapperHasData {
+      label {
+        @include muiLabelFocused;
+      }
+
+      .Mui-focused,
+      .MuiFormLabel-colorPrimary {
+        color: #3455d1;
+      }
+      fieldset {
+        border: 2px solid #3455d1;
+      }
+      .MuiFormHelperText-root {
+        color: red;
+        margin-left: 0 !important;
+      }
+    }
+    .orgListUsers {
+      margin-top: 16px;
+      width: 100%;
+      max-width: 100%;
+      .list-suggest {
+        .item-suggest {
+          max-width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          word-break: break-all;
+          .name-item {
+            padding-right: 26px;
+          }
+          .close {
+            position: static;
+          }
+        }
+      }
+    }
+    .btnSave {
+      border: 0;
+      padding: 0px 16px;
+      max-width: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 48px;
+      height: auto;
+      min-width: 256px;
+    }
+  }
+}

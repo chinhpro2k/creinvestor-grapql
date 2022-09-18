@@ -1,0 +1,107 @@
+.title_are_you_interested_deal {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    color: #333E48;
+}
+
+.round_closing_day { 
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.round_closing_day span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3455D1;
+    padding-right: 8px;
+}
+
+.append_description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #96A4B4;
+}
+
+.round_closing_days {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3455D1;
+    display: inline-block;
+    padding-right: 8px;
+}
+.round_label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #3455D1;
+    display: inline-block;
+    padding-right: 8px;
+    cursor: pointer;
+}
+.round_closing_day_calendar {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333E48;
+}
+
+.round_closing_clock {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333E48;
+    margin-top: 4px;
+}
+.interested_buttons {
+    display: flex;
+    margin-top: 18px;
+    column-gap: 5px;
+    justify-content: space-between;
+}
+.interested_buttons .but_interested_yes {
+    display: inline-block;
+    width: 175px;
+    height: 46px;
+    padding: 15px 70px;
+    background: #3455D1;
+    border-radius: 55px;
+    border: none;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+.calendar {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-top: 4px;
+}
+
+.sign_the_non_disclosure {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #96A4B4;
+    mix-blend-mode: normal;
+    margin-top: 12px;
+  }
+  

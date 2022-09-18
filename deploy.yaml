@@ -1,0 +1,58 @@
+tags: ['cloudbuild']
+
+substitutions:
+
+steps:
+    - id: 'client:build'
+      waitFor: ['-']
+      name: 'gcr.io/cloud-builders/docker'
+      entrypoint: 'bash'
+      args:
+          - '-c'
+          - |
+              docker build . \
+              -t ${_API_IMAGE}:${SHORT_SHA} \
+              -t ${_API_IMAGE}:${BRANCH_NAME}${TAG_NAME}
+
+    - id: 'client:push-image'
+      waitFor: ['client:build']
+      name: 'gcr.io/cloud-builders/docker'
+      args: ['push', '${_API_IMAGE}:${SHORT_SHA}']
+    - id: 'client:deploy'
+      waitFor: ['client:push-image']
+      name: gcr.io/cloud-builders/gcloud
+      entrypoint: 'bash'
+      args:
+          - '-c'
+          - |
+              ENVVARS='DEPLOYMENT=${_DEPLOYMENT},VERSION=${SHORT_SHA},NODE_ENV=${_DEPLOYMENT}'
+
+              PROJECT_NAME=realadvisor-cre
+              [[ "$_DEPLOYMENT" == production ]] && PROJECT_NAME=realadvisor-cre
+
+              echo "DEPLOY INVESTOR CLIENT ENV: $$ENVVARS"
+
+              DEPLOYMENT=$(echo ${_DEPLOYMENT} | tr a-z A-Z)
+
+              ATTEMPT=0
+
+              until gcloud alpha run deploy ${_SERVICE_NAME} \
+                --project $${PROJECT_NAME} \
+                --image ${_API_IMAGE}:${SHORT_SHA} \
+                --platform managed \
+                --region=europe-west1 \
+                --allow-unauthenticated \
+                --memory=1Gi \
+                --concurrency=80 \
+                --max-instances=10 \
+                --set-env-vars=$${ENVVARS} \
+                --service-account=api-cloudrun@$${PROJECT_NAME}.iam.gserviceaccount.com || { [ $$ATTEMPT -eq 4 ] && >&2 echo "api deploy failed" && exit 1; }; do
+                (( ATTEMPT++ ));
+                echo "api deploy attempt $$ATTEMPT"
+                sleep 20;
+              done
+
+options:
+    machineType: 'N1_HIGHCPU_8'
+
+timeout: 1400s

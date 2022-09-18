@@ -1,0 +1,315 @@
+#preferences {
+  .return-home {
+    cursor: pointer;
+    svg {
+      margin-right: 8px;
+    }
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3455d1;
+  }
+
+  .layout-left {
+    .title-left {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.15px;
+      color: #333e48;
+    }
+
+    .item-left {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      cursor: pointer;
+
+      .icon {
+        margin-right: 15px;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        /* RealAdvisor Black */
+
+        color: #333e48;
+      }
+
+      &:first-of-type {
+        margin-top: 25px;
+      }
+    }
+
+    .active {
+      p {
+        color: #3455d1;
+      }
+
+      svg {
+        path {
+          fill: #3455d1;
+        }
+      }
+    }
+  }
+
+  .layout-right {
+    .title-header {
+      margin-top: 5px;
+      margin-bottom: 48px;
+
+      h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #333e48;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.15px;
+        color: #333e48;
+        padding-top: 8px;
+        border-top: 1px solid #3455d1;
+        margin-top: 7px;
+      }
+    }
+
+    .budget {
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.15px;
+        color: #333e48;
+        margin-bottom: 11px;
+      }
+
+      .field-budget {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 16px;
+        column-gap: 16px;
+      }
+    }
+
+    .regions {
+      max-width: 549px;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.15px;
+        color: #333e48;
+        margin-bottom: 16px;
+      }
+      .input-regions {
+        max-width: 549px;
+        position: relative;
+        input {
+          width: 100%;
+          border: 1px solid #3455d1;
+          border-radius: 4px;
+          padding: 16px 0 16px 60px;
+          font-size: 16px;
+          &:focus {
+            border: 1px solid #3455d1;
+            outline: none;
+          }
+        }
+        .icon {
+          position: absolute;
+          top: 19px;
+          left: 27px;
+        }
+      }
+      .list-suggest {
+        margin-top: 16px;
+        .item-suggest {
+          cursor: pointer;
+          max-width: 549px;
+          position: relative;
+          background: #ffffff;
+          box-shadow: 0px 3px 10px rgba(40, 99, 166, 0.15);
+          border-radius: 20px;
+          padding: 12px 16px;
+          margin-bottom: 8px;
+          .name-item {
+            display: flex;
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              text-align: center;
+              color: #333e48;
+            }
+            span {
+              margin-left: 8px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              text-align: center;
+              color: #96a4b4;
+            }
+          }
+          .close {
+            position: absolute;
+            top: 13px;
+            right: 16px;
+          }
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .box-suggest {
+        max-width: 549px;
+        background: #ffffff;
+        box-shadow: 0px 3px 10px rgba(40, 99, 166, 0.15);
+        border-radius: 0px 0px 10px 10px;
+        max-height: 250px;
+        overflow-y: scroll;
+        .item-suggest {
+          cursor: pointer;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 14px;
+          line-height: 16px;
+          color: #96a4b4;
+          padding: 16px 16px 19px 16px;
+          &:last-of-type {
+            padding-bottom: 16px;
+          }
+          &:hover {
+            background: rgba(40, 99, 166, 0.15);
+          }
+        }
+        /* width */
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: #888;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+      }
+    }
+
+    .check-box-list {
+      margin-top: 32px;
+
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.15px;
+        color: #333e48;
+      }
+      .title-checkbox-list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #3455d1;
+          cursor: pointer;
+        }
+        h3 {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    .btn-save {
+      cursor: pointer;
+      margin-top: 48px;
+      max-width: 182px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3455d1;
+      border-radius: 93px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 50px;
+    }
+
+    //material custom
+    .MuiFormGroup-root {
+      flex-direction: row;
+      //display: grid;
+      //grid-template-columns: repeat(4, minmax(0, 1fr));
+      //row-gap: 16px;
+      //column-gap: 16px;
+    }
+
+    .MuiFormControlLabel-root {
+      background: #ffffff;
+      /* Blurred shadow (smaller) */
+
+      box-shadow: 0px 3px 10px rgba(40, 99, 166, 0.15);
+      border-radius: 20px;
+      padding: 4px 16px 4px 16px;
+      margin-left: 0;
+      margin-bottom: 16px;
+    }
+
+    .MuiButtonBase-root-MuiCheckbox-root {
+      padding: 0;
+      margin-right: 12px;
+    }
+
+    .MuiTypography-root {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #333e48;
+    }
+
+    .MuiSvgIcon-root {
+      path {
+        fill: #3455d1;
+      }
+    }
+  }
+}

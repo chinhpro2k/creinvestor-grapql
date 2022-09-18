@@ -1,0 +1,21 @@
+.line {
+  width: 19.33px;
+  height: 3.17px;
+  border-radius: 5px;
+  margin: 3px;
+  background-color: #d4d4d4;
+}
+.carousel > div:last-of-type .active .line {
+  background-color: #ffffff;
+}
+
+.carousel > div:last-of-type {
+  position: absolute;
+  top: 158px;
+  left: 0px;
+  z-index: 2;
+}
+
+.carousel.carousel:first-child{
+    height: 188px;
+}

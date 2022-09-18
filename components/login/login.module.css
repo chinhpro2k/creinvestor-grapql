@@ -1,0 +1,115 @@
+.loginTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  border-radius: 6px;
+}
+.requestMagicLink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.loginWrapperGrid {
+  min-height: 54px;
+}
+.loginWrapperGrid .MuiInputBase-input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.loginWrapperGridLeft {
+  background-color: #FFF;
+}
+.loginBut {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: none;
+  background-color: #3454D1;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: initial;
+}
+.loginBut:active, .loginBut:hover {
+  background-color: rgb(68, 138, 255);
+}
+.requestAccessLink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  margin-top: 10px;
+}
+.openYourEmailAndClickLogin {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.authenticationLinkSentBox {
+  background: #CCE4CB;
+  border: 1px solid #529A5F;
+  border-radius: 4px;
+  padding: 18px 56px;
+  width: auto;
+  height: 61px;
+  display: inline-block;
+}
+.authenticationLinkSent {
+  height: 25px;
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #2B5C28;
+}
+.errorFromServer {
+  background: #ECC7C7;
+  border: 1px solid #F58484;
+  border-radius: 4px;
+  line-height: 61px;
+  min-height: 61px;
+  padding: 0 39px;
+  display: inline-block;
+  color: #DD3944;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .loginBut {
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 52px;
+  }
+}
